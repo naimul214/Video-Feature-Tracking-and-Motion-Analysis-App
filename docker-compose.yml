@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build: ./frontend
+    container_name: streamlit_app
+    ports:
+      - "8501:8501"
+    environment:
+      # URL for backend service within Docker network
+      FASTAPI_URL: "http://backend:8000"
+    depends_on:
+      - backend
+    networks:
+      - app_net
+
+  backend:
+    build: ./backend
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    driver: bridge

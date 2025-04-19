@@ -1,0 +1,6 @@
+streamlit==1.44.0            
+streamlit-image-coordinates==0.2.0  
+requests>=2.0
+opencv-python-headless>=4.5
+numpy>=1.19
+Pillow>=9.0
