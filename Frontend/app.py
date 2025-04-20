@@ -122,7 +122,7 @@ if "frames_b64" in st.session_state and st.session_state.get("frames_b64"):
     # Decode and display the current frame image with bounding box
     frame_data = base64.b64decode(st.session_state["frames_b64"][frame_idx])
     frame_image = Image.open(BytesIO(frame_data))
-    st.image(frame_image, caption=f"Frame {frame_idx}", use_column_width=True)
+    st.image(frame_image, caption=f"Frame {frame_idx}", use_container_width=True)
 
     # Display current speed and a speed chart
     speeds = st.session_state.get("speeds", [])
