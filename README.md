@@ -1,6 +1,6 @@
 # 🎥 Video Feature Tracking and Motion Analysis App
 
-Deployed Live 👉 [https://motion-tracker-frontend-283944763297.us-central1.run.app](https://motion-tracker-frontend-283944763297.us-central1.run.app)
+Deployed Live 👉 [https://motion-tracker-frontend-283944763297.us-central1.run.app]
 
 This project is a full-stack AI-powered web app built with **Streamlit** and **FastAPI**, containerized with Docker, and deployed on **Google Cloud Run**. It allows users to upload `.mp4` videos, select a region of interest (ROI), and analyze the motion of selected features using **Lucas-Kanade Optical Flow**.
 
