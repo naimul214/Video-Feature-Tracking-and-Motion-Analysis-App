@@ -36,17 +36,17 @@ The application leverages a decoupled frontend/backend microservice architecture
 
 ```mermaid
 graph TD
-    subgraph Client [Client Interface]
+    subgraph Client ["Client Interface"]
         A[Upload MP4 Video] --> B[Interactive ROI Selection]
         B --> C[Select Filters: Blur / Equalize / Edges]
     end
 
-    subgraph Frontend [Streamlit Service (Port 8501)]
+    subgraph Frontend ["Streamlit Service (Port 8501)"]
         C --> D[Extract Metadata & Start Frame]
         D --> E[POST request: /track]
     end
 
-    subgraph Backend [FastAPI Service (Port 8000)]
+    subgraph Backend ["FastAPI Service (Port 8000)"]
         E --> F[Write isolated temp file]
         F --> G[Run Preprocessing Filters]
         G --> H[Shi-Tomasi Point Detection]
