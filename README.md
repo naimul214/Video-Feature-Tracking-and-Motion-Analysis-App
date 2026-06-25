@@ -8,7 +8,6 @@
 
 A lightweight, production-ready Edge-AI assistant and motion analysis tool that uses computer vision to track points of interest across video sequences. Built with a decoupled microservice architecture (FastAPI backend and Streamlit frontend), containerized with Docker, and deployed on Google Cloud Run.
 
-Deployed Live 👉 [https://motion-tracker-frontend-283944763297.us-central1.run.app](https://motion-tracker-frontend-283944763297.us-central1.run.app)
 
 ---
 
